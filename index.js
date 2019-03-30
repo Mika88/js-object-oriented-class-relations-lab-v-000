@@ -35,6 +35,7 @@ class Passenger {
                 return trip.passengerId === this.id;
             }.bind(this)
         );
+        debugger;
     }
 
   drivers() {
