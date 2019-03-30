@@ -38,10 +38,11 @@ class Passenger {
     }
 
   drivers() {
-    return this.trips().filter(
-      function(trip) {
-        return trip.driver();
-     });
+      return this.trips().filter(
+        function(trip) {
+          return trip.driver();
+       }.bind(this)
+     );
    }
 }
 
