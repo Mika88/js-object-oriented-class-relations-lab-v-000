@@ -37,14 +37,7 @@ class Passenger {
         );
     }
 
-  drivers() {
-    this.trips().filter(
-      function(trip) {
-        return trip.driver;
-      }
-    )
   }
-}
 
 let tripId = 0;
 
